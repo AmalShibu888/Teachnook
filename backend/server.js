@@ -25,10 +25,11 @@ async function fetchData() {
 app.listen(8081 , ()=>{
     console.log("Listening...");
 })
+app.use(cors())
 app.use(express.json())
 
 app.post('/getqueries' , async (req , res )=>{
-  // console.log(req.body.name);
+  console.log(req.body);
   const {name , phone ,email , subject , message} = req.body;
   // console.log("y");
     await pool.query('INSERT INTO queries (name , phone ,email , subject , message) VALUES (? , ? ,? , ? ,?)' , [name , phone ,email , subject , message]);
@@ -38,7 +39,7 @@ app.post('/getqueries' , async (req , res )=>{
 app.post('/getsuggetions' , async (req , res )=>{
   console.log(req.body);
   const {suggetions} = req.body;
-  // console.log("y");
+  // console.log(suggetions);
     await pool.query('INSERT INTO suggestion (sugestion) VALUES (? )' , [suggetions]);
     res.json("working");
 })
