@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5f51d196.css",
+    "main.js": "/static/js/main.a6bbdb0f.js",
+    "static/media/image3.jpg": "/static/media/image3.eb19d13ae0e367656e4c.jpg",
+    "static/media/image7.jpg": "/static/media/image7.1abf4883110a6281901f.jpg",
+    "static/media/image5.jpg": "/static/media/image5.ae32e4cb30bbdd415819.jpg",
+    "static/media/background.jpg": "/static/media/background.4f530b297b875004646f.jpg",
+    "static/media/image1.jpg": "/static/media/image1.020a6b0a7b768deb18be.jpg",
+    "static/media/image9.jpg": "/static/media/image9.2726794f21d0b4bcfbe1.jpg",
+    "static/media/image2.jpg": "/static/media/image2.ae436c9802e9e16e0dac.jpg",
+    "static/media/image4.jpg": "/static/media/image4.b8c1407ea4db255f65d1.jpg",
+    "static/media/image6.jpg": "/static/media/image6.2d8e6d4c5dad1a73bd0f.jpg",
+    "static/media/image8.jpg": "/static/media/image8.3cc8a4d542b3fe689e60.jpg",
+    "static/media/image10.jpg": "/static/media/image10.cf72a15b5d7b2b309f00.jpg",
+    "static/media/BIMAL.jpg": "/static/media/BIMAL.caeb5b6e5429df257486.jpg",
+    "index.html": "/index.html",
+    "main.5f51d196.css.map": "/static/css/main.5f51d196.css.map",
+    "main.a6bbdb0f.js.map": "/static/js/main.a6bbdb0f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f51d196.css",
+    "static/js/main.a6bbdb0f.js"
+  ]
+}

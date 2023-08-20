@@ -2,7 +2,7 @@ const express = require('express');
 const mysql = require('mysql2');
 const cors = require('cors');
 const dotenv = require('dotenv');
-
+const path = require('path');
 dotenv.config();
 
 const app = express();
@@ -13,21 +13,14 @@ const pool = mysql.createPool({
     password : process.env.MYSQL_PASSWORD,
     database : process.env.MYSQL_DATABASE
 }).promise()
-async function fetchData() {
-    try {
-      const [result] = await pool.query("SELECT * FROM queries");
-      // console.log(result);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  }
+
 
 app.listen(8081 , ()=>{
     console.log("Listening...");
 })
 app.use(cors())
 app.use(express.json())
-
+app.use(express.static(path.join(__dirname + "/public")))
 app.post('/getqueries' , async (req , res )=>{
   console.log(req.body);
   const {name , phone ,email , subject , message} = req.body;
